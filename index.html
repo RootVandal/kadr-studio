@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Фотостудия · Алматы</title>
+  <meta name="description" content="Фотостудия в Алматы: портрет, семья, предметная и love story съёмка. Аренда залов, портфолио, запись.">
+  <meta name="theme-color" content="#f7f5f1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101014'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%234b5bf0'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <a class="logo" href="#top">
+    <span class="lens" aria-hidden="true"></span>
+    <span class="logo-tx"><b data-brand="name">КАДР</b><i data-brand="suffix">фотостудия</i></span>
+  </a>
+  <nav class="nav" id="nav">
+    <a href="#services">Съёмки</a>
+    <a href="#works">Портфолио</a>
+    <a href="#halls">Залы</a>
+    <a href="#price">Цены</a>
+    <a href="#book">Запись</a>
+  </nav>
+  <a class="btn btn-sm hdr-cta" href="#book">Записаться</a>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <p class="eyebrow mono"><span data-brand="tagline">Фотостудия в Алматы</span> · с <span data-brand="since">2026</span></p>
+        <h1 class="hero-title">Снимаем так,<br>чтобы <em>хотелось</em><br>распечатать.</h1>
+        <p class="hero-lead">Портрет, семья, предметка и love story. Три света, три зала и фотограф, который подскажет каждую позу.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#book">Записаться на съёмку</a>
+          <a class="link-arrow" href="#works">Портфолио <span>→</span></a>
+        </div>
+        <div class="hero-stats mono">
+          <div><b data-count="7">7</b><span>лет опыта</span></div>
+          <div><b data-count="3">3</b><span>зала</span></div>
+          <div><b data-count="4000">4000+</b><span>съёмок</span></div>
+        </div>
+      </div>
+      <figure class="hero-right">
+        <img id="heroImg" alt="Портрет, снятый в студии">
+        <figcaption class="mono"><span>КАДР №0001</span><span id="heroExif">85mm · f/1.8 · ISO 100</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FILM STRIP -->
+  <div class="strip" aria-hidden="true"><div class="strip-track" id="strip"></div></div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap sec-head">
+      <span class="sec-no mono">— Что снимаем</span>
+      <h2 class="sec-title">Четыре жанра,<br>в которых мы <em>сильны.</em></h2>
+    </div>
+    <div class="wrap svc-grid" id="svcGrid"></div>
+    <div class="wrap quick" id="quick"></div>
+  </section>
+
+  <!-- WORKS -->
+  <section class="works" id="works">
+    <div class="wrap sec-head row">
+      <div>
+        <span class="sec-no mono">— Портфолио</span>
+        <h2 class="sec-title">Контактный лист<br><em>последних съёмок.</em></h2>
+      </div>
+      <p class="sec-aside">Нажмите на кадр, чтобы открыть крупно. Листать можно стрелками и свайпом.</p>
+    </div>
+    <div class="wrap filters" id="filters"></div>
+    <div class="wrap sheet" id="sheet"></div>
+  </section>
+
+  <!-- HALLS -->
+  <section class="halls dark" id="halls">
+    <div class="wrap sec-head">
+      <span class="sec-no mono">— Залы студии</span>
+      <h2 class="sec-title">Три зала<br><em>под разный свет.</em></h2>
+    </div>
+    <div class="wrap halls-grid" id="hallsGrid"></div>
+  </section>
+
+  <!-- PRICE -->
+  <section class="price" id="price">
+    <div class="wrap sec-head">
+      <span class="sec-no mono">— Пакеты</span>
+      <h2 class="sec-title">Прозрачные цены.<br><em>Без «по факту».</em></h2>
+    </div>
+    <div class="wrap pkg-grid" id="pkgGrid"></div>
+    <p class="wrap price-note mono">Все цены — демонстрационные. Итог зависит от жанра, числа кадров и срочности.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq wrap">
+    <div class="sec-head"><span class="sec-no mono">— Вопросы</span><h2 class="sec-title">Коротко<br><em>о съёмке.</em></h2></div>
+    <div class="faq-list" id="faq"></div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="book dark" id="book">
+    <div class="wrap book-grid">
+      <div>
+        <span class="sec-no mono">— Запись</span>
+        <h2 class="sec-title">Запишитесь<br><em>на съёмку.</em></h2>
+        <p class="book-lead">Ответим в течение 15 минут в рабочее время, подберём дату и зал.</p>
+        <div class="book-contacts">
+          <a data-brand-href="tel"><span class="mono">Телефон</span><b data-brand="phone"></b></a>
+          <a data-brand-href="wa" target="_blank" rel="noopener"><span class="mono">WhatsApp</span><b>Написать →</b></a>
+        </div>
+      </div>
+      <form class="form" id="form" novalidate>
+        <label class="field"><span>Имя</span><input name="name" autocomplete="name" required placeholder="Как вас зовут"></label>
+        <label class="field"><span>Телефон</span><input name="phone" type="tel" autocomplete="tel" required placeholder="+7 7__ ___ __ __"></label>
+        <div class="field"><span>Жанр съёмки</span><div class="checks" id="formSvc"></div></div>
+        <label class="field"><span>Желаемая дата</span><input name="date" type="date"></label>
+        <label class="field"><span>Комментарий</span><textarea name="note" rows="2" placeholder="Например: семья из 4 человек, хотим тёплый зал"></textarea></label>
+        <button class="btn btn-block" type="submit">Отправить заявку</button>
+        <p class="form-note">Демо-форма: данные никуда не отправляются.</p>
+        <div class="form-ok" id="formOk" hidden>
+          <b>Заявка принята.</b>
+          <p>В рабочей версии она уйдёт администратору. Можно продублировать в WhatsApp:</p>
+          <a class="btn" id="formWa" target="_blank" rel="noopener">Открыть WhatsApp</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr" id="contacts">
+  <div class="wrap ftr-grid">
+    <div><span class="mono muted">Адрес</span><p data-brand="address"></p><small data-brand="addressNote"></small></div>
+    <div><span class="mono muted">Часы</span><p data-brand="hours"></p></div>
+    <div><span class="mono muted">Связь</span><p><a data-brand-href="tel" data-brand="phone"></a><br><a data-brand-href="mail" data-brand="email"></a></p></div>
+    <div><span class="mono muted">Соцсети</span><p><a data-brand-href="ig" target="_blank" rel="noopener">Instagram</a><br><a data-brand-href="tg" target="_blank" rel="noopener">Telegram</a><br><a data-brand-href="map" target="_blank" rel="noopener">2ГИС</a></p></div>
+  </div>
+  <div class="ftr-word" aria-hidden="true"><span data-brand="name">КАДР</span></div>
+  <div class="wrap ftr-bottom mono">
+    <span>© <span data-brand="since"></span> <span data-brand="name"></span> · <span data-brand="suffix"></span></span>
+    <span>Концепт сайта · фото: Unsplash</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+  <button class="lb-x" id="lbX" aria-label="Закрыть">×</button>
+  <button class="lb-arr lb-prev" id="lbPrev" aria-label="Предыдущее">←</button>
+  <figure><img id="lbImg" alt=""><figcaption class="mono" id="lbCap"></figcaption></figure>
+  <button class="lb-arr lb-next" id="lbNext" aria-label="Следующее">→</button>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
